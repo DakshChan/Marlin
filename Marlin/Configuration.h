@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //Ender 3
-  #define DEFAULT_Kp 22.95
-  #define DEFAULT_Ki 1.86
-  #define DEFAULT_Kd 70.83
+  #define DEFAULT_Kp 21.29
+  #define DEFAULT_Ki 1.72
+  #define DEFAULT_Kd 65.70
 
 #endif // PIDTEMP
 
@@ -526,7 +526,7 @@
 #define MAX_BED_POWER 255 // limits duty cycle to bed; 255=full current
 
 #if ENABLED(PIDTEMPBED)
-  //#define MIN_BED_POWER 0
+  #define MIN_BED_POWER 127
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //Ender 3
